@@ -6,23 +6,18 @@
     android:orientation="vertical"
     tools:context="com.mao.kaission.parent_childhandwork.fragment.MyFragment">
 
-    <LinearLayout
+    <!--添加导航toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#04ff00"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:background="#ffaabb">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:background="@mipmap/ic_launcher" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -37,26 +32,118 @@
                 android:layout_height="match_parent"
                 android:background="@mipmap/serach" />
         </LinearLayout>
-
-    </LinearLayout>
-    <!--使用TabLayout需要引入design包，
-    这个控件是一个容器组建，封装的HorizontalScrollView-->
-    <!--设置相关tabSelectedTextColor设置文字显示颜色-->
-    <!--tabIndicatorColor设置导航条下边的颜色-->
-
-    <android.support.design.widget.TabLayout
-        android:background="#04ff00"
-        android:id="@+id/tablayout_myfragment"
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"></android.support.design.widget.TabLayout>
+        android:layout_height="match_parent"
+        android:id="@+id/drawerlayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--使用TabLayout需要引入design包，
+            这个控件是一个容器组建，封装的HorizontalScrollView-->
+            <!--设置相关tabSelectedTextColor设置文字显示颜色-->
+            <!--tabIndicatorColor设置导航条下边的颜色-->
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager_myfragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8">
+            <android.support.design.widget.TabLayout
+                android:background="#04ff00"
+                android:id="@+id/tablayout_myfragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></android.support.design.widget.TabLayout>
 
-    </android.support.v4.view.ViewPager>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_myfragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+        <!--添加一个菜单-->
+        <LinearLayout
+
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:background="@mipmap/crafter_cguide_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="40dp"
+                    android:text="登录"/>
+            </LinearLayout>
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:text="首页" />
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:text="活动" />
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:text="专题" />
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:text="动态" />
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:text="消息" />
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:text="应用推荐" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="上传教程"
+                    android:textSize="40dp"
+                    android:textColor="#ffffff00"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
 
 </LinearLayout>
