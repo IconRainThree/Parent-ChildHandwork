@@ -103,19 +103,19 @@ public class MyFragment extends BaseFragment {
         //必须要设置这行代码,menu菜单上面的选项才能设置到toolbar上面
 //       setSupportActionBar(toolbar);
 
-        //给toolbar上面到menu设置点击事件
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                if (item.getItemId() == R.id.item_two) {
-                    Toast.makeText(context, "two", Toast.LENGTH_SHORT).show();
-                }else if(item.getItemId() == R.id.item_one){
-                    Toast.makeText(context, "two", Toast.LENGTH_SHORT).show();
-                }
-                return false;
-            }
-        });
+//        //给toolbar上面到menu设置点击事件
+//        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+//
+//            @Override
+//            public boolean onMenuItemClick(MenuItem item) {
+//                if (item.getItemId() == R.id.item_two) {
+//                    Toast.makeText(context, "two", Toast.LENGTH_SHORT).show();
+//                }else if(item.getItemId() == R.id.item_one){
+//                    Toast.makeText(context, "two", Toast.LENGTH_SHORT).show();
+//                }
+//                return false;
+//            }
+//        });
         //创建开关对象
         //参数1:环境变量2.侧滑菜单3.toolbar4.5:打开菜单和关闭菜单描述信息(@string)
         toggle = new ActionBarDrawerToggle((Activity) context,drawerLayout,toolbar,R.string.app_name,R.string.app_name);
