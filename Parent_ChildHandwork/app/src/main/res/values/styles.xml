@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="item_course_linear">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="item_course_img">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
 </resources>
