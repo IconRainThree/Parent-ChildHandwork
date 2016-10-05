@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ExpandableListView;
 import android.widget.ListView;
 
 import com.mao.kaission.parent_childhandwork.R;
@@ -26,7 +27,7 @@ import java.util.List;
  */
 public class CourseFragment extends Fragment {
 
-    private ListView listView = null;
+    private ExpandableListView expandableListView = null;
 
     private CourseFragmentAdapter courseFragmentAdapter;
 
@@ -48,7 +49,7 @@ public class CourseFragment extends Fragment {
 
     private void initAdapter() {
         courseFragmentAdapter = new CourseFragmentAdapter(getActivity(),list);
-        listView.setAdapter(courseFragmentAdapter);
+        expandableListView.setAdapter(courseFragmentAdapter);
     }
 
     private void getData() {
@@ -84,7 +85,7 @@ public class CourseFragment extends Fragment {
     }
 
     private void initView(View inflate) {
-        listView = (ListView) inflate.findViewById(R.id.course_fragment_listview);
+        expandableListView = (ExpandableListView) inflate.findViewById(R.id.course_fragment_listview);
 
     }
 
