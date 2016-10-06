@@ -22,4 +22,78 @@
         <item name="android:layout_weight">2</item>
     </style>
 
+    <style name="item_top_1_img">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="item_top_1_view">
+        <item name="android:background">#ffaaaaaa</item>
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="item_top_1_txt">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="item_top_1_img1">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="item_top2_img">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="item_top2_view">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:background">#ffaaaaaa</item>
+    </style>
+
+    <style name="item_top2_txt1">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="item_top2_img2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="item_top2_txt2">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="item_top2_img3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
 </resources>

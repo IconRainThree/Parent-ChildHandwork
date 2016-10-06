@@ -9,4 +9,7 @@ public class APIContent {
 
     //教程地址course
     public static final String COURSE_URL="http://www.shougongke.com/index.php?m=Mobq_data&a=cate";
+
+    //排行榜地址top
+    public static final String TOP_URL="http://www.shougongke.com/index.php?m=Mobq_data&a=top&versions=1.2.1";
 }

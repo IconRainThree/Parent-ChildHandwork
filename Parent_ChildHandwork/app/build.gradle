@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.mao.kaission.parent_childhandwork"
-        minSdkVersion 19
+        minSdkVersion 17
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -25,4 +25,6 @@ dependencies {
     compile project(':teachlibrary')
     compile 'com.android.support:design:23.3.0'
     compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:palette-v7:23.3.0'
 }
